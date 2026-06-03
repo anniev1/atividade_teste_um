@@ -1,5 +1,6 @@
-<h4>Usuários Cadastrados</h4>
 
+<h4>Usuários Cadastrados</h4>
+<!-- tabela que exibira os usuario cadastrado -->
 <table border="1" cellpadding="3">
 
     <tr>
@@ -9,15 +10,19 @@
     </tr>
 
     <?php
-    
+
+    //consutar sql para buscar todos os usuarios da tabela 
     $sqlTodosUsuarios = "SELECT * FROM usuarios";
 
+    //execultar a consulta no banco de dados 
     $resultadoTodosUsuarios = $conn->query($sqlTodosUsuarios);
 
+    //Percorre cada registro retornado pela consulta
     while($linha = $resultadoTodosUsuarios->fetch_assoc()){
 
-    // o fetch assoc
-
+    //  fetch_assoc() transforma cada linha do resultado
+    // em um array associativo usando os nomes das colunas
+    
         echo "  <tr>
                     <td>". $linha['id'] . "</td>
                     <td>". $linha['usuario'] . "</td>
@@ -28,7 +33,7 @@
     }
     
     ?>
-
+ 
     
 
 
