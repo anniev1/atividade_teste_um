@@ -14,6 +14,7 @@
     if($conn->connect_error){
         die("Erro na conexão!");
 
+    //serve para confirma que a conexão com o banco de dados foi realizado com sucesso
     }else{
         echo "<script>console.log('Banco conectado com sucesso!')</script>";
     };
