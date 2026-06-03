@@ -23,12 +23,15 @@
     //  fetch_assoc() transforma cada linha do resultado
     // em um array associativo usando os nomes das colunas
     
-        echo "  <tr>
+        echo " <tr>
                     <td>". $linha['id'] . "</td>
                     <td>". $linha['usuario'] . "</td>
                     <td>". $linha['senha'] . "</td>
-                </tr>
-        ";
+                    <td>
+                    <a href='excluir.php?id=".$linha['id']."'>Excluir</a>
+                    </td>
+                </tr>";
+       
 
     }
     
