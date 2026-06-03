@@ -1,5 +1,13 @@
 Explicação de como a funcionalidade de exclusão foi implementada;
 
+
+
+
+
+
+
+
+
 Arquivos alterados durante o desenvolvimento;
 
 Trechos importantes do código utilizados;
