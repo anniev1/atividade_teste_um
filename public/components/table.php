@@ -7,6 +7,8 @@
         <th>ID</th>
         <th>Usuário</th>
         <th>Senha</th>
+        <th>Excluir</th>
+        <th>Editar</th>
     </tr>
 
     <?php
@@ -24,19 +26,22 @@
     // em um array associativo usando os nomes das colunas
     
         echo " <tr>
-                    <td>". $linha['id'] . "</td>
+                  <td>". $linha['id'] . "</td>
                     <td>". $linha['usuario'] . "</td>
                     <td>". $linha['senha'] . "</td>
-                    <td>
-                    <a href='excluir.php?id=".$linha['id']."'>Excluir</a>
-                    </td>
-                </tr>";
+                    <td> <a href='excluir.php?id=". $linha['id'] ."'> Excluir</td>
+                    <td> <a href='editar.php?id=". $linha['id'] ."'> Editar</td>
+                </tr>
        
 
     }
     
     ?>
- 
+   ";
+
+    }
+    
+    ?>
     
 
 
